@@ -1,0 +1,23 @@
+
+<main class="main">
+  <main-header></main-header>
+  <div class="row">
+    <div class="col-md-12 container-carousel">
+      <slick infinite="true" slides-to-show="7" slides-to-scroll="7">
+        <div ng-repeat="images in sliderImg" ng-click="go(images.id)"><img ng-src="{{images.img}}" alt="" class="img-carousel"/></div>
+      </slick>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 container-serie">
+      <ul class="ul-serie">
+        <li ng-repeat="images in serieImg" ng-click="go(images.id)" class="li-serie"><img ng-src="{{images.img}}"/></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <main-footer></main-footer>
+    </div>
+  </div>
+</main>
